@@ -184,3 +184,7 @@ html {
 		transform: rotate(1turn);
 	}
 }
+
+.icon-container{
+  height: auto !important;
+}
