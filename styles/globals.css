@@ -1,0 +1,186 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("../public/font/Poppins-Regular.ttf")
+}
+
+:root {
+  --font-family: 'Open Sans', sans-serif;
+  --clr-light: #f0e9e9;
+  --clr-purple: #9b5de5;
+  --clr-pink: #f15bb5;
+  --clr-yellow: #fee440;
+  --clr-blue: #00bbf9;
+  --clr-green: #00f5d4;
+  --clr-selection-bg: #cb3d92;
+  --clr-selection-text: #f4f0f0;
+  --clr-background: #06070a;
+
+  /* Customize Wallet Modal */
+  /* CUSTOMIZE THE COLOR  PALLETTE */
+  --onboard-white: white;
+  --onboard-black: black;
+  --onboard-primary-1: #2f80ed;
+  --onboard-primary-100: #eff1fc;
+  --onboard-primary-200: #d0d4f7;
+  --onboard-primary-300: #b1b8f2;
+  --onboard-primary-400: #929bed;
+  --onboard-primary-500: #6370e5;
+  --onboard-primary-600: #454ea0;
+  --onboard-primary-700: #323873;
+  --onboard-gray-100: #ebebed;
+  --onboard-gray-200: #c2c4c9;
+  --onboard-gray-300: #999ca5;
+  --onboard-gray-400: #707481;
+  --onboard-gray-500: #33394b;
+  --onboard-gray-600: #242835;
+  --onboard-gray-700: #1a1d26;
+  --onboard-success-100: #d1fae3;
+  --onboard-success-200: #baf7d5;
+  --onboard-success-300: #a4f4c6;
+  --onboard-success-400: #8df2b8;
+  --onboard-success-500: #5aec99;
+  --onboard-success-600: #18ce66;
+  --onboard-success-700: #129b4d;
+  --onboard-danger-100: #ffe5e6;
+  --onboard-danger-200: #ffcccc;
+  --onboard-danger-300: #ffb3b3;
+  --onboard-danger-400: #ff8080;
+  --onboard-danger-500: #ff4f4f;
+  --onboard-danger-600: #cc0000;
+  --onboard-danger-700: #660000;
+  --onboard-warning-100: #ffefcc;
+  --onboard-warning-200: #ffe7b3;
+  --onboard-warning-300: #ffd780;
+  --onboard-warning-400: #ffc74c;
+  --onboard-warning-500: #ffaf00;
+  --onboard-warning-600: #cc8c00;
+  --onboard-warning-700: #664600;
+
+  /* easyzoom palette */
+  --black: #202225;
+  --grey: #7f7f7f;
+  --white: #e5e8eb;
+  --primary: #00b8bf;
+  --secondary: #bc00a6;
+
+  --primary-o: rgba(0, 184, 191, 0.3);
+  --secondary-o: rgba(188, 0, 166, 0.3);
+  --white-o: rgba(229, 232, 235, 0.3);
+  --grey-o: rgba(127, 127, 127, 0.3);
+
+  --primary-oo: rgba(0,184,191,0.075);
+  --secondary-oo: rgba(188,0,166,0.075);
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-family);
+  background: var(--clr-background);
+}
+::selection {
+  background: var(--clr-selection-bg);
+  color: var(--clr-selection-text);
+}
+.dapp-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+}
+.black-bg {
+  background-color: #000909;
+}
+.light-bg {
+  background-color: rgba(255,255,255,0.05);
+}
+.bg-secondary {
+  background-color: var(--secondary);
+}
+.bg-secondary-o {
+  background-color: var(--secondary-o);
+}
+.bg-primary {
+  background-color: var(--primary);
+}
+.bg-primary-o {
+  background-color: var(--primary-o);
+}
+
+.border-secondary {
+  border-color: var(--secondary);
+}
+
+.primary {
+  color: var(--primary);
+}
+.white {
+  color: white;
+}
+.main-violet{
+  color: var(--secondary);
+}
+.bg-pink{
+  background-color: #fb7cc4;
+}
+.bg-white{
+  background-color: white;
+}
+
+.bg-darker{
+  background-color: #333257;
+}
+
+.text-white{
+  color: white;
+}
+.border-pink{
+  --tw-border-opacity: 1;
+  border-color: #fb7cc4;
+}
+.custom-margin{
+  margin-top:8px;
+  margin-bottom:8px;
+}
+
+.animated-border-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.animated-border {
+  z-index: -2;
+  content: '';
+  position: absolute;
+  top: -25%;
+  left: -25%;
+  width: 150%;
+  height: 150%;
+  background-image: linear-gradient(to top, var(--black), var(--primary)),
+      linear-gradient(to top, var(--black), var(--primary)),
+      linear-gradient(to top, var(--secondary), var(--black)),
+      linear-gradient(to top, var(--secondary), var(--black));
+  background-repeat: no-repeat;
+  background-size: 50% 50%, 50% 50%;
+  background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+  animation: rotation 4s linear infinite;
+}
+
+@media (max-width: 758px) {
+  .animated-border {
+    top: -25%;
+    left: -150%;
+    width: 400%;
+    height: 150%;
+  }
+}
+
+@keyframes rotation {
+  100% {
+		transform: rotate(1turn);
+	}
+}
