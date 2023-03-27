@@ -6,8 +6,8 @@ import fortmaticModule from '@web3-onboard/fortmatic'
 
 import Easyzoom_icon from '../easyzoomicon'
 
-const RPC_URL = process.env.PROVIDER_URL
-console.log(RPC_URL)
+const RPC_URL = 'https://sepolia.infura.io/v3/ff526ca8ef12400d997abd0bd663bb00'
+
 const fortmatic = fortmaticModule({
   apiKey: process.env.NEXT_PUBLIC_FORTMATIC_KEY
 })
