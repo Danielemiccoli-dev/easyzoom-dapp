@@ -3,8 +3,8 @@ const { MerkleTree } = require('merkletreejs')
 const keccak256 = require('keccak256')
 const whitelist = require('../scripts/whitelist.json')
 const Web3 = require('web3')
-console.log('starting now')
-const providerUrl = process.env.PROVIDER_URL
+
+const providerUrl = 'https://sepolia.infura.io/v3/ff526ca8ef12400d997abd0bd663bb00'
 
 const web3 = new Web3(providerUrl);
 import { config } from '../dapp.config'
