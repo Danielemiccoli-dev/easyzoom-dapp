@@ -7,7 +7,7 @@ import fortmaticModule from '@web3-onboard/fortmatic'
 import Easyzoom_icon from '../easyzoomicon'
 
 const RPC_URL = process.env.PROVIDER_URL
-
+console.log(RPC_URL)
 const fortmatic = fortmaticModule({
   apiKey: process.env.NEXT_PUBLIC_FORTMATIC_KEY
 })
@@ -23,13 +23,13 @@ const initOnboard = init({
     //   id: '0x1',
     //   token: 'ETH',
     //   label: 'Ethereum Mainnet',
-    //   rpcUrl: 'https://mainnet.infura.io/v3/ababf9851fd845d0a167825f97eeb12b'
+    //   rpcUrl: RPC_URL
     // },
     // {
     //   id: '0x3',
     //   token: 'tROP',
     //   label: 'Ethereum Ropsten Testnet',
-    //   rpcUrl: 'https://ropsten.infura.io/v3/ababf9851fd845d0a167825f97eeb12b'
+    //   rpcUrl: RPC_URL
     // },
     // {
     //   id: '0x5',
@@ -41,7 +41,7 @@ const initOnboard = init({
       id: '0x11155111',
       token: 'SepoliaETH',
       label: 'Sepolia Testnet',
-      rpcUrl: RPC_URL
+      rpcUrl: RPC_URL.toString()
     }
   ],
   appMetadata: {
