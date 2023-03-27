@@ -29,6 +29,7 @@ export default function Home() {
   const getData = async () =>{
   axios.get('https://dapp-api-easyzoom.vercel.app')
         .then(response => {
+          console.log(response)
           setIsWlMint(response.data.is_mint_active);
           setTotalMinted(response.data.total_minted);
         })
