@@ -6,7 +6,7 @@ import fortmaticModule from '@web3-onboard/fortmatic'
 
 import Easyzoom_icon from '../easyzoomicon'
 
-const rpc_url = 'https://sepolia.infura.io/v3/ff526ca8ef12400d997abd0bd663bb00'
+const rpc_url = 'https://mainnet.infura.io/v3/ff526ca8ef12400d997abd0bd663bb00'
 const fortmatic = fortmaticModule({
   apiKey: 'pk_live_1BD1E59D49759BBD'
 })
@@ -18,12 +18,12 @@ const coinbaseWallet = coinbaseModule()
 const initOnboard = init({
   wallets: [walletConnect, coinbaseWallet, injected, fortmatic],
   chains: [
-    // {
-    //   id: '0x1',
-    //   token: 'ETH',
-    //   label: 'Ethereum Mainnet',
-    //   rpcUrl: rpc_url
-    // },
+    {
+      id: '0x1',
+      token: 'ETH',
+      label: 'Ethereum Mainnet',
+      rpcUrl: rpc_url
+    }
     // {
     //   id: '0x3',
     //   token: 'tROP',
@@ -36,12 +36,12 @@ const initOnboard = init({
     //   label: 'Ethereum Goerli Testnet',
     //   rpcUrl: rpc_url
     // }
-    {
-      id: '0x11155111',
-      token: 'SepoliaETH',
-      label: 'Sepolia Testnet',
-      rpcUrl: rpc_url
-    }
+    // {
+    //   id: '0x11155111',
+    //   token: 'SepoliaETH',
+    //   label: 'Sepolia Testnet',
+    //   rpcUrl: rpc_url
+    // }
   ],
   appMetadata: {
     name: 'Easyzoom',

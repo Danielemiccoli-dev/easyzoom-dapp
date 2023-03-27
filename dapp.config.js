@@ -1,10 +1,10 @@
 const config = {
   title: 'Easyzoom Dapp',
   description: 'Easyzoom Minting Dapp',
-  contractAddress: '0x043397eD44B63b8451caD77E9D8AbAD2492821eF',
+  contractAddress: '0x8bcA6728966bE94907C4339965c45eE03cb25110',
   maxMintAmount: 2,
   // freeMintMaxMintAmount: 1,
-  price: 0.001
+  price: 0.088
 }
 
 export { config }

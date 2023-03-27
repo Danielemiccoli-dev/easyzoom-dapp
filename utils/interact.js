@@ -4,7 +4,7 @@ const keccak256 = require('keccak256')
 const whitelist = require('../scripts/whitelist.json')
 const Web3 = require('web3')
 
-const providerUrl = 'https://sepolia.infura.io/v3/ff526ca8ef12400d997abd0bd663bb00'
+const providerUrl = 'https://mainnet.infura.io/v3/ff526ca8ef12400d997abd0bd663bb00'
 
 const web3 = new Web3(providerUrl);
 import { config } from '../dapp.config'
@@ -71,9 +71,9 @@ export const whitelistMint = async (mintAmount) => {
     return {
       success: true,
       status: (
-        <a href={`https://sepolia.etherscan.io/tx/${txHash}`} target="_blank">
+        <a href={`https://etherscan.io/tx/${txHash}`} target="_blank">
           <p>Check out your transaction on Etherscan:</p>
-          <p>{`https://sepolia.etherscan.io/tx/${txHash}`}</p>
+          <p>{`https://etherscan.io/tx/${txHash}`}</p>
         </a>
       )
     }

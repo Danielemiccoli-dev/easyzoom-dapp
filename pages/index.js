@@ -276,7 +276,7 @@ export default function Home() {
                     <span className="text-white px-8 py-3 rounded-full bg-primary-o"><b>Contract Address</b></span>
                   </h4>
                   <a
-                    href={`https://goerli.etherscan.io/address/${config.contractAddress}#readContract`}
+                    href={`https://etherscan.io/address/${config.contractAddress}#readContract`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="font-poppins text-white mt-4 uppercase"
