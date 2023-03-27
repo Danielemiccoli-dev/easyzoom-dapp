@@ -6,9 +6,9 @@ import fortmaticModule from '@web3-onboard/fortmatic'
 
 import Easyzoom_icon from '../easyzoomicon'
 
-const rpc_url = process.env.PROVIDER_URL
+const rpc_url = 'https://sepolia.infura.io/v3/ff526ca8ef12400d997abd0bd663bb00'
 const fortmatic = fortmaticModule({
-  apiKey: process.env.NEXT_PUBLIC_FORTMATIC_KEY
+  apiKey: 'pk_live_1BD1E59D49759BBD'
 })
 
 const injected = injectedModule()
