@@ -142,7 +142,7 @@ export default function Home() {
                 )}
                 <h1 className="font-poppins tracking-widest font-bold text-2xl md:text-2xl bg-gradient-to-br primary bg-clip-text text-transparent mt-3">
                   <span className="text-white">{isWlMint ? `` : '' }</span>
-                  {isWlMint ? `Mint is Live!` : mintDateLocal}
+                  {isWlMint=='true' ? `Mint is Live!` : mintDateLocal}
                 </h1>
                 <h3 className="text-sm text-white tracking-widest">
                   {wallet?.accounts[0]?.address
