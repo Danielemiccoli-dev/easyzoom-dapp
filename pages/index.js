@@ -9,7 +9,7 @@ import {
 import moment from 'moment';
 
 // const {createClient} = require('redis')
-const MINT_DATE = "2023-03-29 17:00:00"
+const MINT_DATE = "2023-03-29 16:00:00"
 const mintDateLocal = moment.utc(MINT_DATE).local().format("DD MMMM HH:mm")
 
 

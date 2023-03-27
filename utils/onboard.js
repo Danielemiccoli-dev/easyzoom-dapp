@@ -41,7 +41,7 @@ const initOnboard = init({
       id: '0x11155111',
       token: 'SepoliaETH',
       label: 'Sepolia Testnet',
-      rpcUrl: RPC_URL.toString()
+      rpcUrl: RPC_URL
     }
   ],
   appMetadata: {
