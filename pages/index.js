@@ -27,7 +27,7 @@ export default function Home() {
   const [onboard, setOnboard] = useState(null)
 
   const getData = async () =>{
-  axios.get('https://dapp-api-easyzoom.vercel.app')
+  axios.get('https://api-easyzoom.onrender.com/')
         .then(response => {
           console.log(response)
           setIsWlMint(response.data.is_mint_active);
