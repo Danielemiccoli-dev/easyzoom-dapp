@@ -237,11 +237,11 @@ export default function Home() {
                     {wallet ? (
                       <button
                         className={` ${
-                            !isWlMint=='true' || isMinting
+                            !(isWlMint=='true') || isMinting
                             ? 'cursor-not-allowed font-bold'
                             : 'shadow-lg font-bold hover:shadow-pink-400/50'
                         } bg-transparent text-white-700 font-semibold py-2 px-4 border-4 border-secondary rounded-xl font-poppins mt-12 w-full px-6 py-3 rounded-full text-2xl text-white  mx-4 tracking-wide uppercase`}
-                        disabled={!isWlMint=='true' || isMinting}
+                        disabled={!(isWlMint=='true') || isMinting}
                         onClick={ isWlMint=='true' ? whitelistMintHandler : null}
                       >
                         {isMinting ? 'Minting...' : 'Mint Now'}
