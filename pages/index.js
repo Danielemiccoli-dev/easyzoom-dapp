@@ -141,7 +141,7 @@ export default function Home() {
                   </button>
                 )}
                 <h1 className="font-poppins tracking-widest font-bold text-2xl md:text-2xl bg-gradient-to-br primary bg-clip-text text-transparent mt-3">
-                  <span className="text-white">{isWlMint ? `` : '' }</span>
+                  <span className="text-white"></span>
                   {isWlMint=='true' ? `Mint is Live!` : mintDateLocal}
                 </h1>
                 <h3 className="text-sm text-white tracking-widest">
@@ -237,12 +237,12 @@ export default function Home() {
                     {wallet ? (
                       <button
                         className={` ${
-                            !isWlMint || isMinting
+                            !isWlMint=='true' || isMinting
                             ? 'cursor-not-allowed font-bold'
                             : 'shadow-lg font-bold hover:shadow-pink-400/50'
                         } bg-transparent text-white-700 font-semibold py-2 px-4 border-4 border-secondary rounded-xl font-poppins mt-12 w-full px-6 py-3 rounded-full text-2xl text-white  mx-4 tracking-wide uppercase`}
-                        disabled={!isWlMint || isMinting}
-                        onClick={ isWlMint ? whitelistMintHandler : null}
+                        disabled={!isWlMint=='true' || isMinting}
+                        onClick={ isWlMint=='true' ? whitelistMintHandler : null}
                       >
                         {isMinting ? 'Minting...' : 'Mint Now'}
                       </button>
