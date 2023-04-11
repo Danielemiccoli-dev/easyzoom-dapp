@@ -44,7 +44,7 @@ export const whitelistMint = async (mintAmount) => {
   if (!isValid) {
     return {
       success: false,
-      status: 'Invalid Merkle Proof - You are not in whitelist'
+      status: 'Invalid Merkle Proof - Your address is not whitelisted!'
     }
   }
 
