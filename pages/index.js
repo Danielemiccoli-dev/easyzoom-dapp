@@ -226,7 +226,7 @@ export default function Home() {
 
                         <div className="flex items-center space-x-3">
                           <p className="primary">
-                            {Number.parseFloat(config.price * mintAmount).toFixed(3)} ETH
+                            {Number.parseFloat(config.price * mintAmount).toFixed(0)} ETH
                           </p>{' '}
                           <span className="text-white">+ GAS</span>
                         </div>
