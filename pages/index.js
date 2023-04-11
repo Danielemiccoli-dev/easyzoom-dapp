@@ -9,7 +9,7 @@ import {
 import moment from 'moment';
 
 // const {createClient} = require('redis')
-const MINT_DATE = "2023-03-29 16:00:00"
+const MINT_DATE = "2023-04-12 19:00:00"
 const mintDateLocal = moment.utc(MINT_DATE).local().format("DD MMMM HH:mm")
 
 
@@ -125,7 +125,7 @@ export default function Home() {
               <div className="black-bg rounded-2xl px-4 py-4 md:px-8 md:py-8">
                 <div className="flex flex-col items-center pb-8 w-full">
                   <h3 className="font-poppins tracking-widest text-xl main-pink mt-2">
-                    <span className="text-white px-8 py-3 uppercase"><b>Easyzoom Mint</b></span>
+                    <span className="text-white px-8 py-3 uppercase"><b>Easyzoom Mint - Phase 1</b></span>
                   </h3>
                 </div>
                 {wallet && (
